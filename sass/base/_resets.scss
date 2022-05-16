@@ -14,3 +14,17 @@ a {
 	text-decoration: none;
 	cursor: pointer;
 }
+input[type="text"],
+textarea {
+	border: none;
+}
+input[type="text"]:focus,
+input[type="text"]:active,
+textarea:focus,
+textarea:active {
+	outline: none;
+}
+
+li {
+	list-style: none;
+}
