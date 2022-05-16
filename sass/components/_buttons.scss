@@ -1,7 +1,17 @@
-// .btn {
-// 	&__projects {
-// 			&:hover {
-// 			}
-// 		}
-// 	}
-// }
+@use "./../abstract/variables" as var;
+.btn {
+	// 	&__projects {
+	// 			&:hover {
+	// 			}
+	// 		}
+	// 	}
+	&__contacts {
+		height: 3rem;
+		width: 100%;
+		border: none;
+		color: var.$text-color-secondary;
+		background-color: transparent;
+		border: 3px solid var.$text-color-tertiary;
+		border-radius: 5px;
+	}
+}

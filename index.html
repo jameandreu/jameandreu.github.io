@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="css/styles.css">
-  <title>Document</title>
+  <title>Andrew Ubag</title>
 </head>
 
 <body>
@@ -43,24 +48,36 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae soluta quis debitis sed iusto eaque autem
         fuga, earum cupiditate officiis itaque nesciunt inventore consectetur cumque, odio rem? Odit, cum dignissimos!
       </p>
-      <form action="submit">
-        <input type="text">
-        <input type="text">
-        <input type="textarea">
-        <button type="submit">
-        </button>
+      <form action="submit" class="flex" name="contacts">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <input type="submit" for="contacts" value="Send" class="btn__contacts">
+        </input>
         <div>
           <ul>
-            <li>Address</li>
-            <li>Contact number</li>
-            <li>email</li>
+            <li><i class="fa-solid fa-mobile-screen-button"></i>Contact number</li>
+            <li><i class="fa-solid fa-envelope"></i>email</li>
           </ul>
         </div>
       </form>
     </section>
-    <footer></footer>
-  </div>
 
+  </div>
+  <footer class="footer flex">
+    <ul class="upper">
+      <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+
+    </ul>
+    <ul class="lower">
+      <li>Copyright © Andrew James Ubag</li>
+      <li>MIT License</li>
+      <li>All rights reserved</li>
+      <li></li>
+    </ul>
+  </footer>
 
 
 
