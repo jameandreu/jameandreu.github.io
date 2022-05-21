@@ -1,3 +1,15 @@
+@use "./../abstract/mixins" as mixins;
+
 .flex {
 	display: flex;
+}
+.hide-for-mobile {
+	@include mixins.breakpoint-down(medium) {
+		display: none;
+	}
+}
+.hide-for-desktop {
+	@include mixins.breakpoint-up(large) {
+		display: none;
+	}
 }
