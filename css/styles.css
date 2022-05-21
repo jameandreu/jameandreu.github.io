@@ -163,7 +163,7 @@ body {
   display: flex;
   height: 100vh;
   width: 100%;
-  background-color: maroon;
+  background-color: rgba(4, 4, 4, 0.968);
   flex-direction: column;
 }
 @media (min-width: 64em) {
@@ -175,18 +175,19 @@ body {
 .header {
   width: 100%;
   height: auto;
-  background: url(./../../src/images/background-lq.jpg), rgba(0, 0, 0, 0.2);
+  background: url(./../../src/images/overlay.png), url(./../../src/images/background-lq.jpg);
+  background-color: rgba(46, 40, 40, 0.157);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  background-position: left 0px;
+  background-position: center 0px;
   text-align: center;
   padding: 4rem 3rem;
 }
 @media (min-width: 64em) {
   .header {
-    background-size: 220%, cover;
+    background-size: 280%;
     width: 35%;
   }
 }
@@ -211,7 +212,7 @@ body {
 
 .content {
   width: 100%;
-  background-color: beige;
+  background-color: rgb(235, 235, 235);
   padding: 2.25rem 1.5rem;
   padding-bottom: 0;
   letter-spacing: 1px;
