@@ -13,3 +13,8 @@
 		display: none;
 	}
 }
+.display-for-desktop {
+	@include mixins.breakpoint-up(large) {
+		flex-direction: row;
+	}
+}
