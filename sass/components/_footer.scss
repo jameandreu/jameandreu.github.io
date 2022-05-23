@@ -1,7 +1,8 @@
 @use "./../abstract/variables" as var;
 .footer {
-	background: url(./../../src/images/background-lq.jpg), rgba(0, 0, 0, 0.2);
-	background-blend-mode: darken, multiply;
+	background: url(./../../src/images/overlay.png),
+		url(./../../src/images/background-lq.jpg);
+	background-blend-mode: multiply;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
@@ -11,6 +12,32 @@
 	gap: 0.8rem;
 	padding: 2rem;
 
+	// footer for desktop
+	&__desktop {
+		flex-direction: column;
+		align-items: flex-end;
+		.upper {
+			display: flex;
+			gap: 1rem;
+
+			a {
+				color: var.$text-color-secondary;
+			}
+			li {
+				font-size: 1rem;
+				display: inline-block;
+				// color: white;
+			}
+		}
+		.lower {
+			li {
+				// color: white;
+
+				font-size: 0.7rem;
+				margin-top: 0.5rem;
+			}
+		}
+	}
 	.upper {
 		margin: 0 auto;
 		display: flex;
