@@ -239,7 +239,7 @@ body {
 .header__inner p {
   color: white;
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 2;
   margin-top: 1rem;
 }
 
@@ -249,6 +249,11 @@ body {
   padding: 2.25rem 1.5rem;
   padding-bottom: 0;
   letter-spacing: 1px;
+}
+@media (min-width: 40em) {
+  .content {
+    padding: 6rem 4rem;
+  }
 }
 @media (min-width: 64em) {
   .content {
@@ -271,6 +276,11 @@ body {
 .content__section--about h1 {
   font-weight: 400;
   font-size: 1.3rem;
+}
+@media (min-width: 64em) {
+  .content__section--about h1 {
+    font-size: 2rem;
+  }
 }
 .content__section--about p {
   font-weight: 300;
