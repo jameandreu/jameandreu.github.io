@@ -58,7 +58,7 @@ body {
 		p {
 			color: white;
 			font-size: 1.1rem;
-			line-height: 1.5;
+			line-height: 2;
 			margin-top: 1rem;
 		}
 	}
@@ -71,6 +71,9 @@ body {
 	padding: 2.25rem 1.5rem;
 	padding-bottom: 0;
 	letter-spacing: 1px;
+	@include mixins.breakpoint-up(medium) {
+		padding: 6rem 4rem;
+	}
 	@include mixins.breakpoint-up(large) {
 		width: 65%;
 		overflow-y: scroll;
@@ -90,6 +93,9 @@ body {
 			h1 {
 				font-weight: 400;
 				font-size: 1.3rem;
+				@include mixins.breakpoint-up(large) {
+					font-size: 2rem;
+				}
 			}
 			p {
 				font-weight: 300;
