@@ -1,7 +1,7 @@
 @use "./../abstract/variables" as var;
 .footer {
-	background: url(./../../src/images/overlay.png),
-		url(./../../src/images/background-lq.jpg);
+	background: url("/src/images/overlay.png"),
+		url("/src/images/background-lq.jpg");
 	background-blend-mode: multiply;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
