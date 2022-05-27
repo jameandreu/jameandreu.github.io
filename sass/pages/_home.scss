@@ -99,6 +99,9 @@ body {
 			}
 			p {
 				font-weight: 300;
+				@include mixins.breakpoint-up(large) {
+					font-size: 0.9rem;
+				}
 			}
 		}
 
