@@ -12,9 +12,9 @@ const swiper = new Swiper(".mySwiper", {
 	},
 	pagination: {
 		el: ".swiper-pagination",
+		clickable: true,
 	},
 	mousewheel: true,
 	keyboard: true,
 	modules: [Navigation, Pagination],
 });
-console.log(swiper);
