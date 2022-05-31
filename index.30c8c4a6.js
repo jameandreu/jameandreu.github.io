@@ -1,0 +1,2 @@
+"use strict";const content=document.querySelector(".content"),header=document.querySelector(".header");console.log(content);let position=content.scrollTop,bgPosition=0;content.addEventListener("scroll",(function(){let o=content.scrollTop;bgPosition=-.03*position,console.log(bgPosition),header.style.backgroundPosition=`center ${bgPosition}px`,position=o}));
+//# sourceMappingURL=index.30c8c4a6.js.map
