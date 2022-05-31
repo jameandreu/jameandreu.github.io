@@ -214,7 +214,7 @@ li {
   background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.8) 90%);
 }
 .swiper-slide::after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel libero placeat ratione, inventore reiciendis";
+  content: "PomoTodo is a pomodoro timer that works on your mobile or desktop browser. The goal of this app is to help you focus to be productive.";
   display: block;
   position: absolute;
   top: 80%;
@@ -345,6 +345,21 @@ body {
 .content__section--projects h2 {
   font-weight: 400;
   font-size: 1.2rem;
+}
+.content__section--projects div {
+  margin-top: 1rem;
+}
+.content__section--projects div img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 5px;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+.content__section--projects div p {
+  margin-top: 0.5rem;
+  font-weight: 200;
 }
 .content__section--contacts h2 {
   font-weight: 400;
