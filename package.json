@@ -4,6 +4,7 @@
 	"description": "A simple portfolio",
 	"main": "index.js",
 	"scripts": {
+		"parcel": "npx parcel index.html",
 		"compile:sass": "npx sass sass/main.scss css/styles.css -w"
 	},
 	"repository": {
@@ -14,6 +15,11 @@
 	"license": "ISC",
 	"homepage": "https://github.com/jameandreu/portfolio#readme",
 	"devDependencies": {
-		"sass": "^1.51.0"
+		"@parcel/transformer-sass": "~2.6.0",
+		"parcel": "~2.6.0",
+		"sass": "~1.51.0"
+	},
+	"dependencies": {
+		"swiper": "~8.1.6"
 	}
 }

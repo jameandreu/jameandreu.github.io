@@ -11,6 +11,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/swiper.js"></script>
   <script src="js/index.js" defer></script>
   <title>Andrew Ubag</title>
 </head>
@@ -40,29 +41,51 @@
   <div class="content">
     <section class="content__section content__section--about flex">
       <h1>
-        I want to make the internet a better place.
+        Get to know me.
       </h1>
-      <p>Internet is a place of sharing. So I made it one of my missions to make the Internet a better place for
-        everyone in any way that I can contribute. I graduated with a degree in IT last 2018 and made it to IT industry
-        the same year as a Service Engineer from DELL and HP for different clients. </p>
+      <p>Hi! I am Andrew, I am an IT professional who worked with various companies as an Infrastructure Service
+        Engineer for 3 1/2 years. That experience helped me developed strong technical and communication skills. I excel
+        at troubleshooting in all kinds of computer and printer hardwares especially DELL and HP enterprise units. I am
+        an aspiring web developer who wishes to put my skills to test.
+        <!-- I graduated with a degree in IT last 2018 and made it to IT industry the same year as a Service
+        Engineer from DELL and HP for different clients. I've work with different kinds of people over the course of my
+        3 1/2 years of experience in Infrastructure Service Industry. I developed strong communication and technical
+        skills that enabled me to be one of the top engineers in my previous company consecutively. -->
+      </p>
+      <p>Currently, I am learning the basics of web development and Javascript is my weapon of choice. I can also
+        confidently write in SASS and HTML. I've also have experience writing in PHP and MySQL as my backend language to
+        build the admin and member panel in our IT Project back when I was in college.</p>
+      <p>I don't like to define myself by the work I've done. I define myself by the things I want to do. Skills can be
+        taught, personality is inherent. I am easily inspired and more than willing to follow my fascinations wherever
+        they take me. I prefer to keep learning, continue to explore the possiblities for me and do
+        interesting things that matter.</p>
     </section>
 
     <section class="content__section content__section--projects">
       <h2>Projects</h2>
-      <div>
+      <!-- <div>
         <a href="/Pomodoro/" class="btn__projects--1">
           <img src="https://place-puppy.com/300x200" alt="">
         </a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel libero placeat ratione, inventore reiciendis
           neque.</p>
+      </div> -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide"><img src="/src/images/pomodoro.png" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="/src/images/pomodoro.png" alt=""></a>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
 
     </section>
     <section class="content__section content__section--contacts">
       <h2>Let me hear from you</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae soluta quis debitis sed iusto eaque autem
-        fuga, earum cupiditate officiis itaque nesciunt inventore consectetur cumque, odio rem? Odit, cum dignissimos!
-      </p>
+      <p>I'm seeking out opportunities to collaborate with companies / agencies / individuals to enhance my skills. I
+        want to bring my creative and problem solving skills to the table where we can solve real business problems</p>
       <form action="submit" name="contacts">
         <input type="text" class="inputs inputs--name" placeholder="Name">
         <input type="text" class="inputs inputs--email" placeholder="Email">

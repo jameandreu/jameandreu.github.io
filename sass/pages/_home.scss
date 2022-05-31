@@ -16,8 +16,8 @@ body {
 	// width: 35%;
 	width: 100%;
 	height: auto;
-	background: url(./../../src/images/overlay.png),
-		url(./../../src/images/background-lq.jpg);
+	background: url("/src/images/overlay.png"),
+		url("/src/images/background-lq.jpg");
 	background-color: rgba(77, 50, 50, 0.157);
 	background-blend-mode: multiply;
 	background-repeat: no-repeat;
@@ -99,6 +99,9 @@ body {
 			}
 			p {
 				font-weight: 300;
+				@include mixins.breakpoint-up(large) {
+					font-size: 0.9rem;
+				}
 			}
 		}
 
@@ -107,25 +110,25 @@ body {
 				font-weight: 400;
 				font-size: 1.2rem;
 			}
-			div {
-				// display: flex;
-				// flex-direction: column;
-				margin-top: 1rem;
+			// div {
+			// 	// display: flex;
+			// 	// flex-direction: column;
+			// 	margin-top: 1rem;
 
-				img {
-					display: block;
-					margin: 0 auto;
-					width: 100%;
-					border-radius: 5px;
-					aspect-ratio: 2/1;
-					object-fit: cover;
-				}
+			// 	img {
+			// 		display: block;
+			// 		margin: 0 auto;
+			// 		width: 100%;
+			// 		border-radius: 5px;
+			// 		aspect-ratio: 2/1;
+			// 		object-fit: cover;
+			// 	}
 
-				p {
-					margin-top: 0.5rem;
-					font-weight: 200;
-				}
-			}
+			// 	p {
+			// 		margin-top: 0.5rem;
+			// 		font-weight: 200;
+			// 	}
+			// }
 		}
 
 		&--contacts {
