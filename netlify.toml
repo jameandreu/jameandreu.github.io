@@ -1,2 +1,4 @@
 [build]
+base = "/"
+build = "npm run netlify-parcel-build"
 publish =  "dist"
