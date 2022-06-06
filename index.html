@@ -86,12 +86,12 @@
       <h2>Let me hear from you</h2>
       <p>I'm seeking out opportunities to collaborate with companies / agencies / individuals to enhance my skills. I
         want to bring my creative and problem solving skills to the table where we can solve real business problems</p>
-      <form action="submit" name="contacts">
-        <input type="text" class="inputs inputs--name" placeholder="Name">
-        <input type="text" class="inputs inputs--email" placeholder="Email">
-        <textarea class="inputs" placeholder="Message"></textarea>
-        <input type="submit" for="contacts" value="Send" class="btn__contacts">
-        </input>
+      <form class="contact__form" name="contacts" action="https://formspree.io/f/xwkyzknd" method="POST">
+        <input type="text" class="inputs inputs--name" name="name" placeholder="Name">
+        <input type="email" class="inputs inputs--email" name="email" placeholder="Email">
+        <textarea class="inputs inputs--textBody" name="message" placeholder="Message"></textarea>
+        <button type="submit" for="contacts" class="btn__contacts"> Send
+        </button>
         <div>
           <ul>
             <li><i class="fa-solid fa-mobile-screen-button"></i>+639676775035</li>
