@@ -86,11 +86,11 @@
       <h2>Let me hear from you</h2>
       <p>I'm seeking out opportunities to collaborate with companies / agencies / individuals to enhance my skills. I
         want to bring my creative and problem solving skills to the table where we can solve real business problems</p>
-      <form class="contact__form" name="contacts">
-        <input type="text" class="inputs inputs--name" placeholder="Name">
-        <input type="text" class="inputs inputs--email" placeholder="Email">
-        <textarea class="inputs inputs--textBody" placeholder="Message"></textarea>
-        <button type="submit" for="contacts" value="Send" class="btn__contacts">
+      <form class="contact__form" name="contacts" action="https://formspree.io/f/xwkyzknd" method="POST">
+        <input type="text" class="inputs inputs--name" name="name" placeholder="Name">
+        <input type="email" class="inputs inputs--email" name="email" placeholder="Email">
+        <textarea class="inputs inputs--textBody" name="message" placeholder="Message"></textarea>
+        <button type="submit" for="contacts" class="btn__contacts"> Send
         </button>
         <div>
           <ul>
@@ -120,42 +120,5 @@
 
 
 </body>
-<script src="https://smtpjs.com/v3/smtp.js">
-
-
-</script>
-<script>
-  const sendMail = function (e) {
-    e.preventDefault();
-    //FC36A93C9F832CCC52A8C8FEFA2018DD2E1E
-    // Email.send({
-    //   Host: "smtp.gmail.com",
-    //   Username: "andrew.ubag@gmail.com",
-    //   Password: "FC36A93C9F832CCC52A8C8FEFA2018DD2E1E",
-    //   To: 'jameandreu@gmail.com',
-    //   From: document.querySelector('.inputs--email').value,
-    //   Name: document.querySelector('.inputs--name').value,
-    //   Body: document.querySelector('.inputs--textBody').value
-    // }).then(
-    //   message => alert('success')
-    // );
-    Email.send({
-      SecureToken: "f2fbe73e-3c6c-498d-92b4-42ca5c780939",
-      To: 'andrew.ubag@gmail.com',
-      From: "andrew.ubag@gmail.com",
-      Name: document.querySelector('.inputs--name').value,
-      Subject: `Email from ${document.querySelector('.inputs--name').value}:`,
-      Body: `${document.querySelector('.inputs--textBody').value}
-      from:${document.querySelector('.inputs--email').value}`
-    }).then(
-      message => alert(message)
-    );
-
-
-  }
-  const form = document.querySelector('.contact__form');
-  console.log("andrew");
-  form.addEventListener('submit', sendMail);
-</script>
 
 </html>
