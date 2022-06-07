@@ -288,8 +288,9 @@ body {
   }
 }
 .header__inner img {
-  height: 6.25rem;
-  width: 6.25rem;
+  height: 7rem;
+  width: 7rem;
+  object-fit: cover;
   border-radius: 100%;
 }
 .header__inner p {
